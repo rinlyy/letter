@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Read</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #800000, #000000); 
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ffcccc;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .intro-container {
+            text-align: center;
+        }
+
+        .button {
+            background-color: #800000;
+            color: #fff;
+            border: none;
+            padding: 12px 18px; 
+            font-size: 14px; 
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+            font-family: "Times New Roman", serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #b30000;
+        }
+
+        .letter {
+            display: none;
+            margin-top: 20px;
+            padding: 30px;
+            background: #330000;
+            border-radius: 20px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+            overflow-y: scroll;
+            max-height: 300px;
+            width: 70%;
+            font-family: "Times New Roman", serif;
+            color: #ffcccc;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        
+        .intro-text {
+            font-size: 1.8em; 
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container" id="intro-container">
+        <p class="intro-text">Hi, I know you hate me at the moment and don't want to talk to me, so I made this instead.</p>
+        <button class="button" id="open-button">Open Me</button>
+    </div>
+
+    <div class="letter" id="letter">
+        <p>Dear Kyle,</p>
+        <p>Like I already mentioned, I know you're still mad and I understand, but I'm tired of arguing. Our conversation keeps going nowhere because, as you pointed out, "this shouldn't be happening anymore," but at the same time we also talked, and you promised you'd tell me whenever something bothered you or I did something you didn't like instead of making me guess. I feel like you don't actually want to fix the problem because of those actions. I get you're mad, and okay, scream at me all you want, but after that, can we please do something to resolve the issue instead of you just berating me more and making me feel like a joke? I acknowledged my mistake and tried to apologize, and you kept holding that mistake against me. Once I opened up about how those actions made me feel, you basically ignored it.</p>
+        <p>I'm sorry I haven't talked to you at all today; I just needed a bit of time to think as well and to calm down. I didn't want to talk to you upset and emotionally driven. Honestly speaking, when I saw that your text was about how you just finished breakfast, I felt hurt because it felt like you were just sweeping the entire conversation we had the night before under the rug. I didn't want to charge at you with those emotions because I know that maybe that was your way of moving forward, but that's not moving forward. Forgetting that conversation happened won't solve the issues, so please, Kyle, try to be rational as well. Talk to me properly. I'm not trying to feign innocence. Whatever mistake I did, I'm willing to accept and apologize and adjust for, but at the same time, try to listen to what I said too maybe?</p>
+        <p>I don't want it to be like this whenever we aren't okay. I'm okay with you being mad and lashing out, but after that, we need to move on to the solution, right? I just want you to also listen to how those actions of yours made me feel too. I'm sorry for upsetting you; I didn't mean to. I wouldn't ever want to intentionally hurt you, Kyle. I mean it when I say I love you and I miss you. I know you have past issues regarding your relationships, but holding me to their same standard isn't fair to me. I'm not them, and our relationship is different from your past relationships. I understand you can't get rid of those doubts in a snap, but at least don't let those doubts eat you up and cause you to accuse/think that I'd do those god-awful things just because you aren't with me.</p>
+        <p>If you think I'd do those things, then that's also saying I'm with you for physical purposes only. I want to be with you 24/7 if possible, not for those physical reasons, but because I love being around you, Kyle. Even when we're just doing our own thing and not talking, I enjoy those moments too. I just love knowing that once I turn away from whatever I'm doing, you're there. So please, Kyle, trust me a little more? 
+
+<p>I only want those quiet moments with you and you only. Once you feel okay enough and you've digested the content of this letter, let me know so we can talk, okay?</p>
+        <p>Love,</p>
+        <p>Riri</p>
+    </div>
+
+    <script>
+        document.getElementById('open-button').addEventListener('click', () => {
+            const introContainer = document.getElementById('intro-container');
+            const button = document.getElementById('open-button');
+            const letter = document.getElementById('letter');
+            introContainer.style.display = 'none';  // Hide the intro container (text + button)
+            letter.style.display = 'block';  // Show the letter
+        });
+    </script>
+</body>
+</html>
